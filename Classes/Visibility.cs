@@ -8,7 +8,7 @@ namespace shakesandfidget.Classes
 {
     public static class Visibility
     {
-        public static void HospodaVisible(Form1 f)
+        public static void HospodaVisible(MAIN f)
         {
             f.hospoda1.Visible = true;
             f.arena1.Visible = false;
@@ -16,7 +16,7 @@ namespace shakesandfidget.Classes
             f.sperky1.Visible = false;
             f.zbrane1.Visible = false;
         }
-        public static void ArenaVisible(Form1 f)
+        public static void ArenaVisible(MAIN f)
         {
             f.hospoda1.Visible = false;
             f.arena1.Visible = true;
@@ -24,7 +24,7 @@ namespace shakesandfidget.Classes
             f.sperky1.Visible = false;
             f.zbrane1.Visible = false;
         }
-        public static void PodzemiVisible(Form1 f)
+        public static void PodzemiVisible(MAIN f)
         {
             f.hospoda1.Visible = false;
             f.arena1.Visible = false;
@@ -32,7 +32,7 @@ namespace shakesandfidget.Classes
             f.sperky1.Visible = false;
             f.zbrane1.Visible = false;
         }
-        public static void SperkyVisible(Form1 f)
+        public static void SperkyVisible(MAIN f)
         {
             f.hospoda1.Visible = false;
             f.arena1.Visible = false;
@@ -40,7 +40,7 @@ namespace shakesandfidget.Classes
             f.sperky1.Visible = true;
             f.zbrane1.Visible = false;
         }
-        public static void ZbraneVisible(Form1 f)
+        public static void ZbraneVisible(MAIN f)
         {
             f.hospoda1.Visible = false;
             f.arena1.Visible = false;
@@ -48,7 +48,7 @@ namespace shakesandfidget.Classes
             f.sperky1.Visible = false;
             f.zbrane1.Visible = true;
         }
-        public static void AllInvisible(Form1 f)
+        public static void AllInvisible(MAIN f)
         {
             f.hospoda1.Visible = false;
             f.arena1.Visible = false;

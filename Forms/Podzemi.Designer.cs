@@ -55,20 +55,20 @@ namespace shakesandfidget.Forms
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 32);
+            this.label1.Location = new System.Drawing.Point(33, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 15);
+            this.label1.Size = new System.Drawing.Size(69, 15);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Botek bez sandálů";
+            this.label1.Text = "Duch KEKW";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(185, 32);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 15);
+            this.label2.Size = new System.Drawing.Size(84, 15);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Plešatý Renek";
+            this.label2.Text = "Slepý kamarád";
             // 
             // label3
             // 
