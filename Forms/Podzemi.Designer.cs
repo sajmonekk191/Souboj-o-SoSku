@@ -29,6 +29,7 @@ namespace shakesandfidget.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -41,6 +42,7 @@ namespace shakesandfidget.Forms
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.Updater = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // button1
@@ -151,6 +153,12 @@ namespace shakesandfidget.Forms
             this.button6.Text = "Zaútočit";
             this.button6.UseVisualStyleBackColor = true;
             // 
+            // Updater
+            // 
+            this.Updater.Enabled = true;
+            this.Updater.Interval = 1000;
+            this.Updater.Tick += new System.EventHandler(this.Updater_Tick);
+            // 
             // Podzemi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -188,5 +196,6 @@ namespace shakesandfidget.Forms
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Timer Updater;
     }
 }

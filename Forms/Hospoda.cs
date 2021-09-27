@@ -24,7 +24,7 @@ namespace shakesandfidget.Forms
         private void button1_Click(object sender, EventArgs e)
         {
             Random rnd = new Random();
-            int quest = rnd.Next(1, 2);
+            int quest = rnd.Next(1, 3);
             switch (quest)
             {
                 case 1:
@@ -35,6 +35,20 @@ namespace shakesandfidget.Forms
                     return;
             }
 
+        }
+
+        private void Updater_Tick(object sender, EventArgs e)
+        {
+            if (hodnoty.soubojwin == true)
+            {
+                souboj1.Visible = false;
+                hodnoty.soubojwin = false;
+            }
+            if (hodnoty.soubojlose == true)
+            {
+                souboj1.Visible = false;
+                hodnoty.soubojlose = false;
+            }
         }
     }
 }

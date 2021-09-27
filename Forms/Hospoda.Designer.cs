@@ -29,11 +29,13 @@ namespace shakesandfidget.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.souboj1 = new shakesandfidget.Forms.Souboj();
+            this.Updater = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // label1
@@ -81,6 +83,12 @@ namespace shakesandfidget.Forms
             this.souboj1.TabIndex = 4;
             this.souboj1.Visible = false;
             // 
+            // Updater
+            // 
+            this.Updater.Enabled = true;
+            this.Updater.Interval = 1000;
+            this.Updater.Tick += new System.EventHandler(this.Updater_Tick);
+            // 
             // Hospoda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -105,5 +113,6 @@ namespace shakesandfidget.Forms
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button1;
         public Souboj souboj1;
+        private System.Windows.Forms.Timer Updater;
     }
 }

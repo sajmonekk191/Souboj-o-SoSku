@@ -18,9 +18,35 @@ namespace shakesandfidget.Forms
 
         private void Souboj_Load(object sender, EventArgs e)
         {
+            hodnoty.HP = hodnoty.MaxHP;
+            
+        }
+
+        private void Updater_Tick(object sender, EventArgs e)
+        {
+            label1.Text = hodnoty.enemyName;
             label4.Text = hodnoty.name;
             label3.Text = Convert.ToString("HP: " + hodnoty.HP);
             label2.Text = Convert.ToString("HP: " + hodnoty.HPEnemy);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int hpenemy = hodnoty.HPEnemy -= hodnoty.damage;
+            int hp = hodnoty.HP -= hodnoty.damageEnemy;
+            label2.Text = Convert.ToString("HP: " + hpenemy);
+            label3.Text = Convert.ToString("HP: " + hp);
+            if (hodnoty.HPEnemy <= 0)
+            {
+                Random rnd = new Random();
+                hodnoty.ADDXP(rnd.Next(5, 10));
+                hodnoty.ADDGOLD(rnd.Next(3, 12));
+                hodnoty.soubojwin = true;
+            }
+            if (hodnoty.HP <= 0)
+            {
+                hodnoty.soubojlose = true;
+            }
         }
     }
 }

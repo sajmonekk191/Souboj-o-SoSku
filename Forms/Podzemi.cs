@@ -14,5 +14,10 @@ namespace shakesandfidget.Forms
         {
             InitializeComponent();
         }
+
+        private void Updater_Tick(object sender, EventArgs e)
+        {
+
+        }
     }
 }

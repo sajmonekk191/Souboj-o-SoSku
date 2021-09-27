@@ -29,11 +29,13 @@ namespace shakesandfidget.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.Updater = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // label1
@@ -81,6 +83,12 @@ namespace shakesandfidget.Forms
             this.label4.TabIndex = 3;
             this.label4.Text = "Player";
             // 
+            // Updater
+            // 
+            this.Updater.Enabled = true;
+            this.Updater.Interval = 1000;
+            this.Updater.Tick += new System.EventHandler(this.Updater_Tick);
+            // 
             // Arena
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -104,5 +112,6 @@ namespace shakesandfidget.Forms
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Timer Updater;
     }
 }

@@ -48,6 +48,7 @@ namespace shakesandfidget
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button6 = new System.Windows.Forms.Button();
             this.Updater = new System.Windows.Forms.Timer(this.components);
+            this.button7 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -206,11 +207,21 @@ namespace shakesandfidget
             this.Updater.Interval = 1000;
             this.Updater.Tick += new System.EventHandler(this.Updater_Tick);
             // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(12, 157);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(129, 23);
+            this.button7.TabIndex = 22;
+            this.button7.Text = "Postava";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
             // MAIN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(737, 407);
+            this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox1);
@@ -258,6 +269,7 @@ namespace shakesandfidget
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Timer Updater;
+        private System.Windows.Forms.Button button7;
     }
 }
 
