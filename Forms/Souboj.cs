@@ -38,7 +38,7 @@ namespace shakesandfidget.Forms
             int hp = hodnoty.HP -= hodnoty.damageEnemy;
             label2.Text = Convert.ToString("HP: " + hpenemy);
             label3.Text = Convert.ToString("HP: " + hp);
-            if (hodnoty.HPEnemy <= 0)
+            if (hodnoty.HPEnemy <= 0 && hodnoty.HP > 0)
             {
                 Random rnd = new Random();
                 hodnoty.ADDXP(rnd.Next(5, 10));
@@ -46,10 +46,6 @@ namespace shakesandfidget.Forms
                 hodnoty.soubojwin = true;
             }
             if (hodnoty.HP <= 0)
-            {
-                hodnoty.soubojlose = true;
-            }
-            if (hodnoty.HP <= 0 && hodnoty.HPEnemy <= 0)
             {
                 hodnoty.soubojlose = true;
             }
