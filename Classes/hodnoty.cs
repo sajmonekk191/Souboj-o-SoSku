@@ -7,9 +7,10 @@ namespace shakesandfidget.Classes
     public static class hodnoty
     {
         public static string name = "Guest";
+        public static int enemylvl;
         public static int MaxHP = 10;
         public static int level = 1;
-        public static int XP;
+        public static int XP = 0;
         public static int Gold = 0;
         public static int Houbicky = 0;
         public static bool activequest;

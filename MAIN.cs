@@ -59,6 +59,7 @@ namespace shakesandfidget
 
         private void Updater_Tick(object sender, EventArgs e)
         {
+            LevelingSyS.UpdateLVL();
             lblLevel.Text = Convert.ToString("Level: " + hodnoty.level);
             lblGold.Text = Convert.ToString("Zlaťáky: " + hodnoty.Gold);
             lblHoubicky.Text = Convert.ToString("Houbičky: " + hodnoty.Houbicky);

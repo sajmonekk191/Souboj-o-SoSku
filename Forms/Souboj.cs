@@ -24,6 +24,8 @@ namespace shakesandfidget.Forms
 
         private void Updater_Tick(object sender, EventArgs e)
         {
+            label5.Text = Convert.ToString("Level: " + hodnoty.level);
+            label6.Text = Convert.ToString("Level: " + hodnoty.enemylvl);
             label1.Text = hodnoty.enemyName;
             label4.Text = hodnoty.name;
             label3.Text = Convert.ToString("HP: " + hodnoty.HP);
@@ -44,6 +46,10 @@ namespace shakesandfidget.Forms
                 hodnoty.soubojwin = true;
             }
             if (hodnoty.HP <= 0)
+            {
+                hodnoty.soubojlose = true;
+            }
+            if (hodnoty.HP <= 0 && hodnoty.HPEnemy <= 0)
             {
                 hodnoty.soubojlose = true;
             }

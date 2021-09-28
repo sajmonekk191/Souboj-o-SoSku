@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sajmo\\Desktop\\dd\\Souboj-o-SoSku-main\\shakesandfidget.csproj",
+      "projectUniqueName": "C:\\Users\\sajmo\\Desktop\\Souboj-o-SoSku-main\\shakesandfidget.csproj",
       "projectName": "shakesandfidget",
-      "projectPath": "C:\\Users\\sajmo\\Desktop\\dd\\Souboj-o-SoSku-main\\shakesandfidget.csproj",
+      "projectPath": "C:\\Users\\sajmo\\Desktop\\Souboj-o-SoSku-main\\shakesandfidget.csproj",
       "packagesPath": "C:\\Users\\sajmo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sajmo\\Desktop\\dd\\Souboj-o-SoSku-main\\obj\\",
+      "outputPath": "C:\\Users\\sajmo\\Desktop\\Souboj-o-SoSku-main\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
