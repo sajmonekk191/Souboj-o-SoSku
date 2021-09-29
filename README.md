@@ -1,4 +1,4 @@
-# Souboj-o-SoSku
+# Souboj-o-SoŠku
 
 Hra ve stylu shakes and fidget jen takový pokus z nudy :D 
 
