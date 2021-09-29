@@ -8,10 +8,7 @@ namespace shakesandfidget.Classes
     {
         public static void UpdateLVL()
         {
-            if (hodnoty.XP >= 5 && hodnoty.XP < 10)
-            {
-                hodnoty.level = 2;
-            }
+            hodnoty.level = Convert.ToInt32((Math.Pow(hodnoty.XP, 0.7) / 5) + 1); //exponential growth of xp needed to next level
 
         }
     }

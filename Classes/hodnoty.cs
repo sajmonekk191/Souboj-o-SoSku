@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Resources;
+using System.Drawing;
 
 namespace shakesandfidget.Classes
 {
@@ -20,6 +22,7 @@ namespace shakesandfidget.Classes
         public static int HPEnemy;
         public static int damageEnemy;
         public static string enemyName;
+        public static Image ImgEnemy;
         public static bool soubojwin = false;
         public static bool soubojlose = false;
         public static void ADDLEVEL(int hodnota)

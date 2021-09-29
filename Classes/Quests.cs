@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 using shakesandfidget.Forms;
+using System.Resources;
+using System.Drawing;
 
 namespace shakesandfidget.Classes
 {
@@ -19,6 +21,7 @@ namespace shakesandfidget.Classes
             hodnoty.damageEnemy = hodnoty.level / 2 + rnd.Next(1, 3);
             hodnoty.enemylvl = hodnoty.level + rnd.Next(-2, 3);
             hodnoty.enemyName = "Hnusný Kostlivec";
+            hodnoty.ImgEnemy = global::shakesandfidget.Properties.Resources.skeleton;
         }
         public static void Slepyjezdec(Hospoda f)
         {
@@ -32,6 +35,7 @@ namespace shakesandfidget.Classes
             hodnoty.damageEnemy = hodnoty.level / 2 + rnd.Next(1, 3);
             hodnoty.enemylvl = hodnoty.level + rnd.Next(-2, 3);
             hodnoty.enemyName = "Slepý Jezdec";
+            hodnoty.ImgEnemy = global::shakesandfidget.Properties.Resources.Slepy_Jezdec;
         }
     }
 }

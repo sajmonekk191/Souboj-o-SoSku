@@ -25,11 +25,13 @@ namespace shakesandfidget.Forms
         private void Updater_Tick(object sender, EventArgs e)
         {
             label5.Text = Convert.ToString("Level: " + hodnoty.level);
+            if (hodnoty.enemylvl <= 0) { hodnoty.enemylvl = 1; }             
             label6.Text = Convert.ToString("Level: " + hodnoty.enemylvl);
             label1.Text = hodnoty.enemyName;
             label4.Text = hodnoty.name;
             label3.Text = Convert.ToString("HP: " + hodnoty.HP);
             label2.Text = Convert.ToString("HP: " + hodnoty.HPEnemy);
+            pictureBox1.Image = hodnoty.ImgEnemy;
         }
 
         private void button1_Click(object sender, EventArgs e)

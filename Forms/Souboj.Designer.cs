@@ -47,17 +47,19 @@ namespace shakesandfidget.Forms
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(254, 15);
+            this.label1.Location = new System.Drawing.Point(363, 25);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 15);
+            this.label1.Size = new System.Drawing.Size(81, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Protivník";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(158, 200);
+            this.button1.Location = new System.Drawing.Point(226, 333);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(107, 38);
             this.button1.TabIndex = 1;
             this.button1.Text = "Útok";
             this.button1.UseVisualStyleBackColor = true;
@@ -66,27 +68,30 @@ namespace shakesandfidget.Forms
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(204, 38);
+            this.label2.Location = new System.Drawing.Point(291, 63);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(29, 15);
+            this.label2.Size = new System.Drawing.Size(44, 25);
             this.label2.TabIndex = 2;
             this.label2.Text = "HP: ";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(24, 38);
+            this.label3.Location = new System.Drawing.Point(34, 63);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(29, 15);
+            this.label3.Size = new System.Drawing.Size(44, 25);
             this.label3.TabIndex = 4;
             this.label3.Text = "HP: ";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(65, 15);
+            this.label4.Location = new System.Drawing.Point(93, 25);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(39, 15);
+            this.label4.Size = new System.Drawing.Size(59, 25);
             this.label4.TabIndex = 3;
             this.label4.Text = "Player";
             // 
@@ -98,41 +103,46 @@ namespace shakesandfidget.Forms
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(227, 76);
+            this.pictureBox1.Location = new System.Drawing.Point(324, 127);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(111, 107);
+            this.pictureBox1.Size = new System.Drawing.Size(159, 178);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(47, 76);
+            this.pictureBox2.Location = new System.Drawing.Point(67, 127);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(111, 107);
+            this.pictureBox2.Size = new System.Drawing.Size(159, 178);
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(24, 58);
+            this.label5.Location = new System.Drawing.Point(34, 97);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(40, 15);
+            this.label5.Size = new System.Drawing.Size(60, 25);
             this.label5.TabIndex = 7;
             this.label5.Text = "Level: ";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(204, 58);
+            this.label6.Location = new System.Drawing.Point(291, 97);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(40, 15);
+            this.label6.Size = new System.Drawing.Size(60, 25);
             this.label6.TabIndex = 8;
             this.label6.Text = "Level: ";
             // 
             // Souboj
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -143,8 +153,9 @@ namespace shakesandfidget.Forms
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Souboj";
-            this.Size = new System.Drawing.Size(402, 251);
+            this.Size = new System.Drawing.Size(574, 418);
             this.Load += new System.EventHandler(this.Souboj_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
